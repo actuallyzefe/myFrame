@@ -1,10 +1,10 @@
 import axios from "axios";
 import { User } from "./models/User";
 
-const user = new User({ name: "safasfdsa" });
+const user = new User({ id: 1, name: "efessadfsg", age: 122 });
 
-user.events.on("change", () => {
-  console.log("CHANGE");
+user.on("save", () => {
+  console.log(user);
 });
-user.events.trigger("change");
-console.log(user);
+
+user.save();
