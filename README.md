@@ -1,7 +1,5 @@
 # 
 
-# What did i used ?
-Typescript
 
 # How to install ?
 npm install 
